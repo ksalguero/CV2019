@@ -1,0 +1,781 @@
+/*reglas 
+selectores
+declaraciones 
+propiedades
+Valores*/
+
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/*font-family: 'Fjalla One', sans-serif;*/
+
+/* gris oscuro = #1d252c*/
+/*gris claro = #626262*/
+/*background gris = #1b2127*/
+/*celeste = #026fff*/
+
+
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?tc7q2y');
+  src:  url('../fonts/icomoon.eot?tc7q2y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tc7q2y') format('truetype'),
+    url('../fonts/icomoon.woff?tc7q2y') format('woff'),
+    url('../fonts/icomoon.svg?tc7q2y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+
+
+
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+
+h1{
+	font-size: 40px;
+	line-height: 1.2em;
+	letter-spacing: -.2px;
+	color: white;
+	margin: 0;
+}
+
+ol,
+ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+figure {
+	margin: 0;
+}
+
+.header{
+ background-color: #1b2127; 
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ height: 70px;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+.header a{
+	color: white;
+	text-decoration: none;
+}
+
+.menu {
+	height: inherit;
+}
+
+.header ol {
+	display: flex;
+	height: inherit;
+}
+
+.header ol li {
+	height: inherit;
+}
+
+
+.header a{
+	display: flex;
+	align-items:center;
+	height: inherit;
+	padding:0 10px;
+}
+
+h1 strong {
+ color:#026fff;
+}
+
+h2 {
+	color:#026fff;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+
+
+/* seccion hero */
+
+.hero{
+	height: 300px;
+	/*background-image: url('../images/hero.png');*/
+	background-color: #1b2127;
+	/*background-size: 500px 300px;*/
+	/*background-repeat: no-repeat;*/
+	/*background-position-x: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.hero-image{
+	object-fit: cover;
+}
+
+
+
+
+/*seccion informacion */
+
+
+.info-personal{
+	padding: 20px;
+	background: #FAFAFA;	
+}
+
+.info-container{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.ul-info ul{
+	padding: 8px;
+	text-decoration: none;
+}
+
+.info-text{
+width: 50%;
+
+}
+
+.img-boxs{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.box{
+	width: 70px;
+	height: 70px;
+	/*border:1px solid red;*/
+	flex-shrink: 0;
+	margin: 10px;
+
+}
+
+.box img{
+  object-fit: cover;
+}
+
+.info-img{
+	width: 50%;
+}
+
+#description{
+	background-color:#FAFAFA; 
+}
+
+.description{
+	background: white;
+	padding: 20px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#description h3 {
+	text-align: center;
+}
+
+#description p{
+	text-align: center;
+}
+
+
+.box-front,
+.box-back{
+	height: 50px;
+	width: 50px;
+	border:1px solid red;
+	display: flex;
+	flex-direction:row;
+	/*justify-content: space-between;*/
+	/*flex-shrink: 0;*/	
+}
+
+
+
+
+
+
+/*seccion portafolio*/
+.portfolio{
+	background: #FAFAFA;
+	padding: 20px;
+
+}
+
+
+
+.project {
+border:1px solid gray;
+border-radius: 10px;
+/*margin: 10px;*/
+margin-bottom:15px;	
+padding: 20px;
+background: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.project-corse,
+.project-date,
+.project-url{
+	margin: 10px 0;
+}
+
+.project-description {
+	font-size: 20px;
+}
+
+.project strong{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title{
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom:10px;
+}
+
+
+
+
+.project-details{
+	width: 50%;
+}
+
+.project-imageContainer{
+	width: 50%;
+}
+
+.project-imageContainer img{
+	max-width:100%;
+
+}
+
+.project-image{
+	border-radius: 10px;
+}
+
+.btn-portfolio{
+	border:1px solid #026fff;
+	padding:10px 15px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-right: 5px;
+	background-color:#026fff; 
+	color: white;
+}
+
+
+
+/*footer*/
+.footer {
+	color: white;
+	background-color: #1b2127;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.footer a {
+	color: white;
+}
+
+
+.event-list{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.event {
+	margin: 1%;
+	width: 48%;
+	flex-shrink: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	background: #f4fbff;
+}
+
+.event img {
+	width: 480px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.event-detail {
+	margin: 20px 40px;
+	background-color: white;
+    margin-top: -40px;
+    position: relative;
+    padding:20px;
+    text-align: center;
+}
+
+.event-description {
+	text-align: center;
+}
+
+.event-url{
+	border:1px solid #056fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.event-list-title{
+	margin-left: 20px;
+}
+
+.contacto {
+	background-color: #056fff;
+	color: white;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*border:1px solid red;*/
+}
+
+.social{
+ /*border:1px solid red;*/
+}
+
+.social-link{
+	width: 50px;
+	height: 50px;
+	/*border: 1px solid white;*/
+	display: inline-block;
+	padding: 0 20px;
+	margin: 0 10px;
+
+}
+
+
+.social-link.twitter{
+	background-image: ;
+	background-size: 50px 50px;
+}
+
+.social-link.facebook{
+	background-image: ;
+	background-size: 50px 50px;
+}
+
+.social-link.github{
+	background-image: ;
+	background-size: 50px 50px;
+}
+
+.social-link.instagram{
+	background-image: ;
+	background-size: 50px 50px;
+}
+
+.form-email{
+ /*border:1px solid blue;*/
+ padding:10px 20px 10px 10px;
+}
+
+
+.form-email input {
+  border-color:gray;
+  /*padding: 10px 20px 10px 25px;*/
+  margin-bottom: 15px;
+  border-radius:5px;
+  border-style: solid;
+  display: block;
+}
+
+.email-text-form{
+	padding: 10px 20px 10px 25px;
+}
+
+.box-text{
+	 padding: 50px 20px 50px 25px;
+}
+
+
+.form-email button {
+	/*display: block;*/
+	background: transparent;
+	color: white;
+	padding: 7px;
+	border-radius: 5px;
+	width: 100px;
+	margin-top: 5px;
+
+
+}
+
+#boton{
+	text-decoration: none;
+}
+
+.form-email h3{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+	max-width: 1000px;
+	flex:1;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
+
+
+
+/*ProgresBar*/
+
+.title-bar{
+	text-align: center;
+}
+
+progress[value] {
+	/* Elimino la apariencia por defecto */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	
+	/* Quito el borde que aparece en Firefox */
+	border: none;
+
+	/* Añado mis propios estilos */
+	width: 270px;
+	height: 30px;
+	
+	
+/* 	Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+	overflow:hidden;
+	border:1px inset #666;
+	background-color:#D8D8D8;
+	border-radius : 20px ; 
+}
+
+
+.progress{
+	float:left;
+	margin-right:30px;
+	margin-bottom:20px;
+}
+
+.progress span{
+	
+	font-weight:bold;
+	
+}
+
+/* Compatibilidad de color en Firefox, Chrome y Safari */
+progress::-moz-progress-bar{ 
+	background: #FF8000;
+	background: rgba(255,175,75,1);
+	background: -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,146,10,1)));
+	background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );	
+	border-radius : 20px ; 
+	} 
+progress::-webkit-progress-value { 
+	background: #FF8000;
+	background: rgba(255,175,75,1);
+	background: -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,146,10,1)));
+	background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1 );
+	border-radius : 20px ; 	
+
+}
+progress::-webkit-progress-bar { 
+	background-color:#D8D8D8;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+	border-radius : 20px ; 
+		
+	
+}
+
+
+.burger-button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgb(0, 0, 0, .8);
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	position: fixed;
+	z-index: 4;
+	left: 5px;
+	top: 5px;
+	color: white;
+	display: none;
+
+}
+
+
+/*Responsive*/
+
+
+@media screen and (max-width: 1024px) {
+ .description{
+  	margin: 0 20px;
+  }	
+
+  .container {
+  	padding: 0 1em;
+  }
+   .hero{
+  	height: auto;
+  	position: relative;
+  	overflow: hidden;
+  	padding: 3em;
+  }
+
+  h1{
+  	font-size: 2em;
+  	z-index: 2;
+  }
+
+  .hero-image{
+  	position: absolute;
+  	z-index: 1;
+  	left: 0;
+  	right: 0;
+  	top: 0;
+  	right: 0;
+  	width: 100%;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+  
+
+  .menu{
+   position: fixed;
+   background:rgb(5, 111, 255, .9);
+   z-index: 3;
+   top: 0;
+   left: -100vw;
+   width: 100vw;
+  /* height: 100vh;*/
+   bottom: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: .03s;
+  }
+  
+
+  .menu.is-active{
+  	left: 0;
+  }
+
+
+  .burger-button{
+  	display: block;
+  }
+
+
+  .header{
+  	display: block;
+  	height:auto;
+
+  }
+
+  .header ol{
+  	display: initial;
+  }
+  .header ol li{
+  	height: 50px;
+  }	
+  .header a{
+  	justify-content: center;
+  	height: 40px;
+  	font-size: 2em;
+  	text-decoration: underline;
+  	margin-bottom: .5em; 
+    
+  }
+
+  .header .logo{
+  	text-align: center;
+  }
+
+ 
+  .project{
+  	display: block;
+  }
+  .project-imageContainer{
+  	width: auto;
+  	text-align: center;
+  }
+  .project-details{
+  	width: auto;
+  	font-size: 16px;
+  }
+  
+  .project-course, .project-date, .project-url{
+    margin: .4em 0;
+  }
+
+  .description{
+  	margin: 0 20px;
+  }
+  .project-title{
+    font-size: 1.5em;
+  }
+  .project-url{
+    font-size: 1em;
+  }
+  .project-course{
+    font-size: .7em;
+  }
+  .project-date{
+    font-size: 1em;
+  }
+  .project-description{
+    font-size: .8em;
+  }
+
+  .event{
+  	width: auto;
+    flex-shrink: initial;
+  }
+  .event img{
+  	width: 100%;
+  }
+
+}
+
+
+@media screen and (max-width: 767px){
+	.info-container{
+		display: block;
+	}
+
+	.info-text{
+		max-width: 90%;
+	}
+	.info-img{
+		width: 100%;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+   h1{
+   	font-size: 1.5em;
+   }
+
+   .project-details{
+  	font-size: 16px;
+  }	
+
+  .event-detail{
+  	margin: -2em .5em .5em .5em;
+  	padding: 1em;
+  }
+
+   .contacto{
+   	height:auto;
+   	padding: 1em;
+   	text-align: center;
+   	display: flex;
+   	margin: auto;
+   }
+
+  .form-email input {
+  	display: inline-block;
+  }
+
+  .form-email button{
+  	display: block;
+  	margin: 1em auto;
+  }
+  .social{
+  	display: inline-block;
+  	width: 90%;
+  	margin: 0 auto;
+  }
+
+  .footer {
+  	display: block;
+  	text-align: center;
+  	border:1px solid transparent;
+  }
+
+}
+
+
+
+@media screen and (max-width: 320px) {
+   h1{
+   	font-size: 1.2em;
+   }
+
+   .hero{
+   	padding: 2em 1em;
+   }
+}
